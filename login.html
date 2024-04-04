@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="global.css" />
+    <script type="module" src="./main.js" defer></script>
+  </head>
+  <body>
+    <main class="grid h-screen place-items-center">
+      <section
+        class="mx-auto w-full max-w-2xl rounded-md px-10 py-14"
+        style="box-shadow: 0 0 4px #00000035"
+      >
+        <header>
+          <h1
+            class="mb-14 bg-gradient-to-r from-stone-600 to-stone-700 bg-clip-text text-2xl font-semibold uppercase tracking-wide text-transparent md:text-3xl"
+            style="line-height: 150%"
+          >
+            Student Management System <br />
+            Admin Login &rarr;
+          </h1>
+        </header>
+        <form class="flex flex-col gap-7">
+          <div class="relative flex flex-col">
+            <label
+              for="username"
+              class="absolute -top-3 left-2 bg-white px-1 text-sm font-medium uppercase text-stone-600"
+              >Enter your user name</label
+            >
+            <input
+              class="rounded-md border-[.14rem] border-stone-400/80 py-3 pl-4 font-medium text-stone-700 outline-none transition-all duration-200 focus:border-stone-400 focus:bg-stone-50"
+              type="text"
+              id="username"
+            />
+          </div>
+          <div class="relative flex flex-col">
+            <label
+              for="password"
+              class="absolute -top-3 left-2 bg-white px-1 text-sm font-medium uppercase text-stone-600"
+              >Enter your Password</label
+            >
+            <input
+              class="rounded-md border-[.14rem] border-stone-400/80 py-3 pl-4 font-medium text-stone-700 outline-none transition-all duration-200 focus:border-stone-400 focus:bg-stone-50"
+              type="password"
+              id="password"
+            />
+
+            <span
+              id="password-eye"
+              class="absolute right-4 top-3 z-10 cursor-pointer"
+            >
+            </span>
+          </div>
+          <button
+            class="mt-7 self-end rounded-sm bg-stone-600 px-10 py-3 font-medium uppercase tracking-wide text-stone-50 transition-all duration-200 hover:bg-stone-600/90 active:bg-stone-600"
+          >
+            Log In
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
